@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="/css/application.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script src="/jquery-2.0.3.min.js"></script>
+	<script src="/html2canvas.js"></script>
+	<script src="/javascript/support.js"></script>
+	<script src="/javascript/application.js"></script>
+	<title>Motivational Posters</title>
+</head>
+
+<body>
+	<header>
+		<h1>Motivational Posters</h1>
+	</header>
+	<section id="select-image">
+		<h2>Step 1. Select an image</h2>
+		<p>Enter the keyword to search for images</p>
+			<input id="search-term" type="text">
+			<button id="go-search">Go!</button>
+			<div id="search-results"></div>
+			<div id="branding"></div>
+	</section>
+
+	<section id="add-text">
+		<h2>Step 2. Add Text</h2>
+		<input id="text" type="text" value="Enter your caption.">
+	</section>
+
+	<section id="style-image">
+		<h2>Step 3. Style it!</h2>
+		<div id="workspace">
+			<p id="caption"></p>
+		</div>
+		<div id="controls">
+			Left: <input type="number" value="10" id="left">
+			Top: <input type="number" value="10" id="top">
+			Width: <input type="number" value="400" id="width">
+			Size: <input type="number" value="32" id="size">
+			Colour: <select id="colour">
+				<option>red</option>
+				<option>green</option>
+				<option>white</option>
+				<option>black</option>
+				<option>blue</option>
+				<option>yellow</option>
+				<option>gray</option>
+				<option>orange</option>
+				</select>
+			Align: <select id="align">
+				<option>left</option>
+				<option>right</option>
+				<option>center</option>
+				</select>
+		</div>
+
+		<div id="twitter">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="I built a 'Motivational Posters' page today here at @makersacademy!" data-size="large">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</div>
+		<button id="save">Download and use local</button>
+		<button id="make-image">MAKE A PICTURE</button>
+
+	</section>
+
+	<footer>
+		<a href="http://www.makersacademy.com"><img src="http://www.makersacademy.com/images/logo.png"></a>
+		<div>
+		I built this page at a taster weekend at <a href="http://www.makersacademy.com">Makers Academy</a>.
+		</div>
+		<div>This page uses Google Image search, Ruby, Sinatra, Javascript, jQuery, HTML and CSS.
+		</div>
+	</footer>
+
+	<div id="img-out"></div>
+
+</body>
+</html>
