@@ -2,7 +2,7 @@
 
 <h2>Written at <a href="http://www.makersacademy.com/">Makers Academy</a></h2>
 
-Hosted on heroku: <a href="https://motivator.herokuapp.com">Motivator</a>
+A work in progress effort to save the motivational image.
 
 <h3>Technologies</h3>
 <ul>
